@@ -1,3 +1,5 @@
+https://creditscore-aigit-2etthbhhv4dpt3nfopa3wy.streamlit.app/
+
 # 💳 CreditScore AI: South African Credit Qualification Portal 🇿🇦
 
 CreditScore AI is a machine learning-powered web application built to evaluate consumer credit qualification and default risk for the South African FinTech market. Aligned with local financial metrics and National Credit Regulator (NCR) guidelines, the app provides real-time credit scoring via structured inputs or conversational text narratives.
