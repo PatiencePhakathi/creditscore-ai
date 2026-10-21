@@ -30,7 +30,6 @@ st.sidebar.title("CreditScore AI 🇿🇦")
 st.sidebar.markdown("*South African Credit Risk Analytics.*")
 menu = st.sidebar.radio("Navigation", ["Overview", "Check SA Credit Eligibility", "Admin & Model Lab", "Responsible AI", "About Project"])
 
-# Force clean reload of South African dataset
 df, _, _, _ = load_german_credit_data()
 st.session_state.df = df
 st.session_state.target_col = 'credit_risk'
@@ -198,8 +197,8 @@ elif menu == "Check SA Credit Eligibility":
 elif menu == "Admin & Model Lab":
     st.title("⚙️ Admin & Model Training Lab")
     if st.session_state.df is not None:
-        st.dataframe(st.session_state.df.head(5), use_container_width=True)
-        st.plotly_chart(plot_target_distribution(st.session_state.df, st.session_state.target_col), use_container_width=True)
+        st.dataframe(st.session_state.df.head(5), width='stretch')
+        st.plotly_chart(plot_target_distribution(st.session_state.df, st.session_state.target_col), width='stretch')
 
 elif menu == "Responsible AI":
     render_responsible_ai_section()
